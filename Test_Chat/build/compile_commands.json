@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/maxsim/Test_Chat/build",
+  "command": "/usr/bin/g++  -I/home/maxsim/Test_Chat/src -g -std=gnu++11 -o CMakeFiles/Test_Chat.dir/src/main.cpp.o -c /home/maxsim/Test_Chat/src/main.cpp",
+  "file": "/home/maxsim/Test_Chat/src/main.cpp"
+},
+{
+  "directory": "/home/maxsim/Test_Chat/build",
+  "command": "/usr/bin/g++  -I/home/maxsim/Test_Chat/src -g -std=gnu++11 -o CMakeFiles/Test_Chat.dir/src/chat.cpp.o -c /home/maxsim/Test_Chat/src/chat.cpp",
+  "file": "/home/maxsim/Test_Chat/src/chat.cpp"
+}
+]

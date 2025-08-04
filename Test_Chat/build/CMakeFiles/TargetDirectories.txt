@@ -1,0 +1,3 @@
+/home/maxsim/Test_Chat/build/CMakeFiles/Test_Chat.dir
+/home/maxsim/Test_Chat/build/CMakeFiles/edit_cache.dir
+/home/maxsim/Test_Chat/build/CMakeFiles/rebuild_cache.dir
