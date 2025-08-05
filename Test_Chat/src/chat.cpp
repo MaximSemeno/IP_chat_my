@@ -34,7 +34,7 @@ IPv4Chat::IPv4Chat(const std::string& ip, int port)
     struct sockaddr_in local_addr;
     memset(&local_addr, 0, sizeof(local_addr));
     local_addr.sin_family = AF_INET;
-    local_addr.sin_addr.s_addr = inet_addr(ip_.c_str());
+    local_addr.sin_addr.s_addr = htonl(INADDR_ANY);
     local_addr.sin_port = htons(port_);
     
     if (bind(sockfd_, (struct sockaddr*)&local_addr, sizeof(local_addr)) < 0) {
@@ -57,6 +57,9 @@ IPv4Chat::~IPv4Chat() {
 void IPv4Chat::run() {
     receiver_thread_ = std::thread(&IPv4Chat::receiverThread, this);
     sender_thread_ = std::thread(&IPv4Chat::senderThread, this);
+
+    receiver_thread_.join();
+    sender_thread_.join();
 }
 
 void IPv4Chat::receiverThread() {
@@ -73,19 +76,13 @@ void IPv4Chat::receiverThread() {
         }
         
         buffer[recv_len] = '\0';
-        char* message = buffer;
-        char* remote_nickname = strchr(buffer, ':');
-        if (remote_nickname) {
-            *remote_nickname = '\0';
-            remote_nickname++;
-            message = strchr(remote_nickname, ':');
-            if (message) {
-                *message = '\0';
-                message++;
-                
-                std::cout << "[" << inet_ntoa(sender_addr.sin_addr) << "] "
-                          << remote_nickname << ": " << message << std::endl;
-            }
+
+
+       char* colon = strchr(buffer, ':');
+        if (colon) {
+            *colon = '\0';
+            std::cout << "[" << inet_ntoa(sender_addr.sin_addr) << "] "
+                      << buffer << ": " << (colon + 1) << std::endl;
         }
     }
 }
@@ -95,6 +92,10 @@ void IPv4Chat::senderThread() {
     
     while (running_) {
         std::getline(std::cin, message);
+
+        if(message.empty()) continue;
+
+
         if (message.length() > 1000) {
             std::cerr << "Message too long (max 1000 bytes)" << std::endl;
             continue;
