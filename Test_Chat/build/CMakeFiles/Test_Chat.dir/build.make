@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maxsim/Test_Chat
+CMAKE_SOURCE_DIR = /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maxsim/Test_Chat/build
+CMAKE_BINARY_DIR = /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Test_Chat.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/Test_Chat.dir/progress.make
 include CMakeFiles/Test_Chat.dir/flags.make
 
 CMakeFiles/Test_Chat.dir/src/main.cpp.o: CMakeFiles/Test_Chat.dir/flags.make
-CMakeFiles/Test_Chat.dir/src/main.cpp.o: /home/maxsim/Test_Chat/src/main.cpp
+CMakeFiles/Test_Chat.dir/src/main.cpp.o: /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/main.cpp
 CMakeFiles/Test_Chat.dir/src/main.cpp.o: CMakeFiles/Test_Chat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxsim/Test_Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test_Chat.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_Chat.dir/src/main.cpp.o -MF CMakeFiles/Test_Chat.dir/src/main.cpp.o.d -o CMakeFiles/Test_Chat.dir/src/main.cpp.o -c /home/maxsim/Test_Chat/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test_Chat.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_Chat.dir/src/main.cpp.o -MF CMakeFiles/Test_Chat.dir/src/main.cpp.o.d -o CMakeFiles/Test_Chat.dir/src/main.cpp.o -c /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/main.cpp
 
 CMakeFiles/Test_Chat.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test_Chat.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxsim/Test_Chat/src/main.cpp > CMakeFiles/Test_Chat.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/main.cpp > CMakeFiles/Test_Chat.dir/src/main.cpp.i
 
 CMakeFiles/Test_Chat.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test_Chat.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxsim/Test_Chat/src/main.cpp -o CMakeFiles/Test_Chat.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/main.cpp -o CMakeFiles/Test_Chat.dir/src/main.cpp.s
 
 CMakeFiles/Test_Chat.dir/src/chat.cpp.o: CMakeFiles/Test_Chat.dir/flags.make
-CMakeFiles/Test_Chat.dir/src/chat.cpp.o: /home/maxsim/Test_Chat/src/chat.cpp
+CMakeFiles/Test_Chat.dir/src/chat.cpp.o: /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/chat.cpp
 CMakeFiles/Test_Chat.dir/src/chat.cpp.o: CMakeFiles/Test_Chat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxsim/Test_Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test_Chat.dir/src/chat.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_Chat.dir/src/chat.cpp.o -MF CMakeFiles/Test_Chat.dir/src/chat.cpp.o.d -o CMakeFiles/Test_Chat.dir/src/chat.cpp.o -c /home/maxsim/Test_Chat/src/chat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test_Chat.dir/src/chat.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_Chat.dir/src/chat.cpp.o -MF CMakeFiles/Test_Chat.dir/src/chat.cpp.o.d -o CMakeFiles/Test_Chat.dir/src/chat.cpp.o -c /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/chat.cpp
 
 CMakeFiles/Test_Chat.dir/src/chat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test_Chat.dir/src/chat.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxsim/Test_Chat/src/chat.cpp > CMakeFiles/Test_Chat.dir/src/chat.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/chat.cpp > CMakeFiles/Test_Chat.dir/src/chat.cpp.i
 
 CMakeFiles/Test_Chat.dir/src/chat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test_Chat.dir/src/chat.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxsim/Test_Chat/src/chat.cpp -o CMakeFiles/Test_Chat.dir/src/chat.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/chat.cpp -o CMakeFiles/Test_Chat.dir/src/chat.cpp.s
 
 # Object files for target Test_Chat
 Test_Chat_OBJECTS = \
@@ -109,7 +109,7 @@ Test_Chat: CMakeFiles/Test_Chat.dir/src/main.cpp.o
 Test_Chat: CMakeFiles/Test_Chat.dir/src/chat.cpp.o
 Test_Chat: CMakeFiles/Test_Chat.dir/build.make
 Test_Chat: CMakeFiles/Test_Chat.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxsim/Test_Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Test_Chat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Test_Chat"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test_Chat.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/Test_Chat.dir/clean:
 .PHONY : CMakeFiles/Test_Chat.dir/clean
 
 CMakeFiles/Test_Chat.dir/depend:
-	cd /home/maxsim/Test_Chat/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maxsim/Test_Chat /home/maxsim/Test_Chat /home/maxsim/Test_Chat/build /home/maxsim/Test_Chat/build /home/maxsim/Test_Chat/build/CMakeFiles/Test_Chat.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build /home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/build/CMakeFiles/Test_Chat.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Test_Chat.dir/depend
 

@@ -4,10 +4,25 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/types.h>
+#include <csignal>
 
 IPv4Chat::IPv4Chat(const std::string& ip, int port) 
     : ip_(ip), port_(port), running_(true) {
+
+        //color
+     std::cout<<"\033[48;2;48;25;52m"<<std::endl;
+     std::cout<<"\033[38;2;230;230;250m"<<std::endl;
     
+    //Text
+        std::cout << R"(
+╔════════════════════════╗
+║    WELCOME TO CHAT     ║
+╚════════════════════════╝
+)"<<std::endl;
+
+        std::cout<<"To exit the program, write /exit" <<std::endl;
+
+
     // Create UDP socket
     sockfd_ = socket(AF_INET, SOCK_DGRAM, 0);
     if (sockfd_ < 0) {
@@ -48,10 +63,23 @@ IPv4Chat::IPv4Chat(const std::string& ip, int port)
 }
 
 IPv4Chat::~IPv4Chat() {
+
+
+    std::cout << R"(
+╔════════════════════════╗
+║         Goodbye        ║
+╚════════════════════════╝
+)"<<std::endl;
+
+    std::cout << "\033[0m" << std::endl;
+    
+
     running_ = false;
     if (receiver_thread_.joinable()) receiver_thread_.join();
     if (sender_thread_.joinable()) sender_thread_.join();
     close(sockfd_);
+    
+   
 }
 
 void IPv4Chat::run() {
@@ -106,5 +134,13 @@ void IPv4Chat::senderThread() {
                   (struct sockaddr*)&broadcast_addr_, sizeof(broadcast_addr_)) < 0) {
             perror("sendto failed");
         }
+        if(message=="/exit")
+        {
+            
+            running_=false;
+            shutdown(sockfd_, SHUT_RDWR);
+             break;
+        }
+        
     }
 }

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/maxsim/Test_Chat/src/chat.cpp" "CMakeFiles/Test_Chat.dir/src/chat.cpp.o" "gcc" "CMakeFiles/Test_Chat.dir/src/chat.cpp.o.d"
-  "/home/maxsim/Test_Chat/src/main.cpp" "CMakeFiles/Test_Chat.dir/src/main.cpp.o" "gcc" "CMakeFiles/Test_Chat.dir/src/main.cpp.o.d"
+  "/home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/chat.cpp" "CMakeFiles/Test_Chat.dir/src/chat.cpp.o" "gcc" "CMakeFiles/Test_Chat.dir/src/chat.cpp.o.d"
+  "/home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src/main.cpp" "CMakeFiles/Test_Chat.dir/src/main.cpp.o" "gcc" "CMakeFiles/Test_Chat.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

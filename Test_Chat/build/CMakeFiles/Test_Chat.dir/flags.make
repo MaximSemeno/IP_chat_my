@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/maxsim/Test_Chat/src
+CXX_INCLUDES = -I/home/maxsim/Test_Chat_2/IP_chat_my-main/Test_Chat/src
 
-CXX_FLAGS = -g -std=gnu++11
+CXX_FLAGS = -g -Wall -Wextra -pedantic -std=c++11
 
